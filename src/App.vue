@@ -19,7 +19,11 @@ const dummy_bar = {} as Bar;
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" :foo="dummy_foo as Foo" :bar="dummy_bar" />
+      <HelloWorld
+        msg="You did it!"
+        :foo="(dummy_foo as Foo)"
+        :bar="dummy_bar"
+      />
     </div>
   </header>
 
